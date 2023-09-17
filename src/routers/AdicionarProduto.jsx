@@ -14,6 +14,12 @@ export default function AdicionarProduto() {
     preco: '',
     img: '',
   });
+  
+  useEffect(() => {
+    if (produtoAdicionado) {
+      setProduto(produtoAdicionado);
+    }
+  }, [produtoAdicionado]);
 
   const handleChangeValue = (event) => {
     const { name, value } = event.target;
