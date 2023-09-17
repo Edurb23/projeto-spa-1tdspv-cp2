@@ -8,8 +8,7 @@ export default function Produtos() {
 
     document.title = "Lista de Produtos";
 
-
-
+    
 
 
 
